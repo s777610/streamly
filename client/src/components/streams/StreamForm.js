@@ -14,7 +14,6 @@ class StreamForm extends Component {
 
   renderInput = ({ input, label, meta }) => {
     const className = `field ${meta.error && meta.touched ? "error" : ""}`;
-
     // redux-form pass input, meta
     return (
       <div className={className}>
@@ -55,7 +54,6 @@ const validate = formValues => {
   if (!formValues.description) {
     errors.description = "You must enter a description";
   }
-
   return errors;
 };
 
